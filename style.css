@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #4a4857;
+    --second-color: #f583a7;
+    --color1: #5e5473;
+    --color2: #19b5a5;
+    --color3: #ede89d;
+    --color4: #ff6933;
+    --color5: #ff0048;
+}
+
+body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 600px;
+    background-color: var(--color2);
+    margin: 10px;
+}
+
+.fa-quote-left {
+    font-size: 64px;
+    color: var(--color4);
+}
+
+.quote {
+    color: var(--color1);
+}
+
+.author {
+    color: var(--color3);
+    font-weight: 600;
+}
+
+hr {
+    margin: 10px 0;
+    width: 60%;
+    border: 1px solid var(--color3);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.twitter-share-button {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--color1);
+    padding: 10px;
+    color: var(--color2);
+    border-radius: 4px;
+}
+
+.buttons button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    color: var(--color3);
+    background-color: var(--color1);
+    border-radius: 4px;
+}
