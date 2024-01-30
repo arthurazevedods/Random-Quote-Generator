@@ -2,6 +2,7 @@ const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 const nextBtn = document.querySelector('.next');
 const twitterBtn = document.querySelector('.twitter-share-button');
+const copyBtn = document.querySelector('.copied');
 
 const getQuote = async () => {
     const res = await fetch('https://type.fit/api/quotes');
@@ -15,7 +16,12 @@ const getQuote = async () => {
 
     author.innerText = authorName;
     twitterBtn.href = `https://twitter.com/intent/tweet?text=${text} - ${authorName}`
-}   
-nextBtn.addEventListener('click',getQuote)
+};
 
-getQuote()
+nextBtn.addEventListener('click',getQuote);
+
+copyBtn.addEventListener('click',()=>{
+    navigator.clipboard.writeText(quote.innerText);
+});
+
+getQuote();

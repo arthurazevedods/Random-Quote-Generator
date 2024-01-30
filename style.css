@@ -67,16 +67,22 @@ hr {
     margin-top: 10px;
 }
 
-.twitter-share-button {
-    text-decoration: none;
-    font-size: 20px;
-    background-color: var(--color1);
-    padding: 10px;
-    color: var(--color2);
-    border-radius: 4px;
+.circular-buttons{
+    display: flex;
 }
 
-.buttons button {
+.twitter-share-button, .copied{
+    cursor: pointer;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.next {
     cursor: pointer;
     font-size: 20px;
     padding: 10px;
